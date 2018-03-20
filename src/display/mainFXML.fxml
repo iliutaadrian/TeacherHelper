@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="860.0" style="-fx-background-color: #85adad;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="display.mainGui">
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="117.0" prefHeight="336.0" prefWidth="606.0" style="-fx-background-color: #5c8a8a;">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="47.99998474121094" text="Id" />
+          <TableColumn fx:id="columnNume" prefWidth="165.0" text="Nume" />
+           <TableColumn fx:id="columnGrupa" prefWidth="65.0" text="Grupa" />
+           <TableColumn fx:id="columnEmail" prefWidth="164.0" text="Email" />
+           <TableColumn fx:id="columnProfesor" prefWidth="163.0" text="Profesor" />
+        </columns>
+      </TableView>
+      <Button layoutX="632.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#studentiGrupa" prefHeight="42.0" prefWidth="216.0" text="Cautare dupa grupe" />
+      <Button layoutX="631.0" layoutY="408.0" mnemonicParsing="false" onMouseClicked="#studentiId" prefHeight="42.0" prefWidth="216.0" text="Cautare id" />
+      <Pane fx:id="studentPane" layoutX="64.0" layoutY="16.0" onMouseClicked="#studentAction" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #5c8a8a;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="81.0" layoutY="32.0" text="Studenti" textAlignment="CENTER">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font></Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="1.0" layoutY="-8.0">
+               <image>
+                  <Image url="@png/003-student.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="numarStudenti" layoutX="171.0" layoutY="35.0" text="0" />
+         </children>
+      </Pane>
+      <Pane fx:id="labsPane" onMouseClicked="#labsAction" layoutX="335.0" layoutY="18.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #5c8a8a;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="103.0" layoutY="30.0" text="Labs" textAlignment="CENTER">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutY="-6.0">
+               <image>
+                  <Image url="@png/002-student-1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="numarLaboratoare" layoutX="157.0" layoutY="32.0" text="0" />
+         </children>
+      </Pane>
+      <Pane fx:id="gradePane" onMouseClicked="#gradeAction" layoutX="596.0" layoutY="18.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #5c8a8a;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="94.0" layoutY="30.0" text="Grades" textAlignment="CENTER">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutY="-8.0">
+               <image>
+                  <Image url="@png/001-grade.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="numarNote" layoutX="168.0" layoutY="33.0" text="0" />
+         </children>
+      </Pane>
+      <Pane onMouseClicked="#findAction" layoutX="648.0" layoutY="119.0" prefHeight="80.0" prefWidth="190.0" style="-fx-background-color: #5c8a8a;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="91.0" layoutY="32.0" text="Find" textAlignment="CENTER">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutY="-8.0">
+               <image>
+                  <Image url="@png/lupa.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="getFastID" layoutX="654.0" layoutY="362.0" style="-fx-background-color: #5c8a8a;" />
+      <ComboBox fx:id="comboGrupa" layoutX="665.0" layoutY="238.0" prefWidth="150.0" />
+   </children>
+</Pane>

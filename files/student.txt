@@ -1,0 +1,7 @@
+1#Popescu#216#piir2345#Mihoc
+2#Popica#216#pair2345#Bota
+3#Suciu#216#srir2345#Mihis
+4#Rusu#212#riir2345#Vancea
+6#Radu#214#rmir2345#Suciu
+7#Radu#214#rmir2345#Suciu
+8#Radu#214#rmir2345#Suciu
